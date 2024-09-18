@@ -1,0 +1,69 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+  background-color: #2309DA;
+}
+
+.imageContainer {
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.resultImage {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.textOverlay {
+  font-family: 'Fascinate Inline', cursive;
+  color: white;
+  font-size: 20px;
+  font-weight: 900;
+  position: fixed;
+  background-color: #2309DA;
+  left: 0;
+  margin-left: 30px;
+}
+
+.floatingButtons {
+  position: fixed;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 20px;
+  z-index: 2;
+  margin-bottom: 30px;
+}
+
+.savebutton, .testbutton {
+  width: 160px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 14px;
+  font-weight: bold;
+}
+
+.savebutton {
+  background-color: white;
+  color: #2309DA;
+}
+
+.testbutton {
+  background-color: #2309DA;
+  box-shadow: inset 0 0 0 2px white;
+  color: white;
+}
